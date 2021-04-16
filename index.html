@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.typekit.net/czt0eod.css">
+  <style>
+.rectangle { 
+  height: 1.3vh;
+  width: 70vh;
+  background-color: #C2C2C2;
+  position: relative;
+  left: 0vh;
+  top: -35vh;
+}
+    .rectangle2 {
+  height: 70vh;
+  width: 1.3vh;
+  background-color: #C2C2C2;
+  position: relative;
+  left: -35vh;
+  top: 0vh;
+}
+    .triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 2vh solid transparent;
+	border-left: 5vh solid #C2C2C2;
+	border-bottom: 2vh solid transparent;
+  position: relative;
+  left: -2vh;
+  top: -35vh;
+}
+    .triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 2vh solid transparent;
+	border-right: 5vh solid #C2C2C2;
+	border-bottom: 2vh solid transparent;
+  position: relative;
+  left: -80vh;
+  top: -35vh;
+}
+    .triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 2vh solid transparent;
+	border-right: 2vh solid transparent;
+	border-top: 5vh solid #C2C2C2;
+  position: relative;
+  left: -47.7vh;
+  top: 36vh;
+}
+    .p2 {
+      font-size: 1.3vh;
+    font-family: input-serif-compressed,serif;
+font-weight: 800;
+font-style: italic;
+position: relative;
+  left: -82.5vh;
+  top: -32.5vh;
+}
+    .p3 {
+      font-size: 1.3vh;
+    font-family: input-serif-compressed,serif;
+font-weight: 800;
+font-style: italic;
+position: relative;
+  left: -39vh;
+  top: -32.5vh;
+}
+     .p4 {
+      font-size: 1.3vh;
+    font-family: input-serif-compressed,serif;
+font-weight: 800;
+font-style: italic;
+position: relative;
+  left: -80.8vh;
+  top: 24.7vh;       
+  transform: rotate(-90deg);
+
+}
+    
+</style>
+</head>
+  
+  
+<body>
+  
+  <div class ="container">
+    <img class="system" src="https://cdn.glitch.com/0e3b37cf-1133-4229-8f00-530e541ff446%2Fbakgrund_NY.png?v=1618555416647">
+    
+  <!--
+<div class="coordinates">
+  
+  <div class="rectangle"></div>
+  <div class="rectangle2"></div>
+    <div class="triangle-right"></div>
+    <div class="triangle-left"></div>
+    <div class="triangle-down"></div>
+<p class="p2">LATIN SCRIPT</p>
+<p class="p3">FAUX CYRILLIC</p>
+<p class="p4">PHONETIC CYRILLIC</p>
+
+  
+  </div>
+-->
+  
+<div class="grid-container hidden">
+  
+  <div>WOULD THIS<br>FIT ON A<br>T-SHIRT?</div>
+  <div>WOЦLD THIS<br>FIT ФN A<br>T-SHIЯT?</div>
+  <div>WФЦLD THIS<br>FЇT ФИ Д<br>Ґ-SHIЯT?</div>  
+  <div>ЩФЦLD ҐЊЇS<br>FЇT ФИ Д<br>Ґ-SHЇЯT?</div>
+  <div>WOULD THIS<br>FИT OН A<br>T-SHIРT?</div>
+  <div>WУЛD THIС<br>FIT ФN Д<br>T-SHIРT?</div>  
+  <div>ВФЛD ҐЊIС<br>FIT ФН Д<br>T-SHIРT?</div>
+  <div>ВФЦLД ҐЊИS<br>FЇT ОН Д<br>Т-SHЇЯT?</div>
+  <div>WOUЛД ДIС<br>FИТ ОН А<br>Т-SHАРТ?</div>
+  <div>WУЛД ДIС<br>FИТ ОН А<br>Т-SHАРТ?</div>
+  <div>ВФЛД ДИС<br>FИТ ОН А<br>Т-SHАРТ?</div>
+  <div>ВФЛД ҐЊИС<br>FИТ ОН А<br>Т-SHАРТ?</div>
+  <div>ВУЛД ДИС<br>ФИТ ОН А<br>Т-ШАРТ?</div>
+  <div>ВУЛД ДИС<br>ФИТ ОН А<br>Т-ШАРТ?</div>
+  <div>ВУЛД ДИС<br>ФИТ ОН А<br>Т-ШАРТ?</div>
+  <div>ВУЛД ДИС<br>ФИТ ОН А<br>Т-ШАРТ?</div>
+</div>
+  
+  
+  <div id="mouse-text">
+
+  
+  </div>  
+
+  
+<script>
+    
+    var textBox = document.querySelectorAll('.grid-container div');
+  
+    let mouseContainer = document.querySelector('#mouse-text'); 
+    
+    for (var i=0; i < textBox.length; i++) {
+      
+      textBox[i].addEventListener('mouseenter', mouseOverListener);
+      
+      }
+
+    const onMouseMove = (e) =>{
+      
+      mouseContainer.style.left = e.pageX + 'px';
+      mouseContainer.style.top = e.pageY + 'px';
+      
+      }
+
+    document.addEventListener('mousemove', onMouseMove);
+    
+  
+    function mouseOverListener(e){
+      
+      let mouseText = document.querySelector('#mouse-text').innerText = this.innerText;
+      
+      }
+
+    
+</script>
+
+  </div>
+  
+</body>
+    
+</html>
+
+.
